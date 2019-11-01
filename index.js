@@ -2,7 +2,7 @@
 
 const chalk = require('chalk'); // eslint-disable-line node/no-missing-require,node/no-extraneous-require
 
-const moduleName = require('../package.json').name;
+const moduleName = require('./package.json').name;
 // TODO: change moduleConfigKey
 const moduleConfigKey = 'your_plugin_name';
 
@@ -24,10 +24,21 @@ function init(hexo) {
   // TODO: choose what do you want to make, filter, tag, helper or others
 
   // TODO: change filter type
-  filter.register('before_post_render', require('./filter.js')(hexo));
+  // Filter API - https://hexo.io/api/filter
+  filter.register('before_post_render', function(data) {
+    console.log('hello world!');
+    // e.g.
+    // data.title = data.title.toLowerCase();
+    return data;
+  });
 
   // TODO: change tag name, and config as async or sync
-  tag.register('your_tag_name', require('./tag.js')(hexo), {async: true});
+  // Tag API - https://hexo.io/api/tag
+  tag.register('your_tag_name', function(args, content) {
+    console.log('hello world!');
+    // ...
+    return 'something';
+  }, {async: true});
 
   // Helper API - https://hexo.io/api/helper
   helper.register('js', function(path) {

@@ -39,8 +39,8 @@ git remote add origin <your-url>
   - find all and replace `dailyrandomphoto` to your **username**
   - find all and replace `hexo-plugin-starter` to your **plugin name**
 - start hack
-  - fix **TODO**s in lib/index.js
-  - add test codes in test/index.js
+  - fix **TODO**s in index.js
+  - add test codes in test.js
 - test in a hexo site
 
 ```sh

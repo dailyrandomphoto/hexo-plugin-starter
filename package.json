@@ -2,11 +2,11 @@
   "name": "hexo-plugin-starter",
   "version": "1.0.0",
   "description": "A starter for create a new hexo plugin.",
-  "main": "lib/index.js",
+  "main": "index.js",
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "test": "mocha test/index.js",
+    "test": "mocha test.js",
     "test:cov": "nyc npm run test",
     "test:loop": "while npm test --silent; do :; done"
   },
@@ -23,7 +23,7 @@
     "bar"
   ],
   "files": [
-    "lib/",
+    "index.js",
     "LICENSE",
     "README.md"
   ],
