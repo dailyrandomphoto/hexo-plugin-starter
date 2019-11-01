@@ -1,0 +1,43 @@
+{
+  "name": "hexo-plugin-starter",
+  "version": "1.0.0",
+  "description": "A starter for create a new hexo plugin.",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "mocha test/index.js",
+    "test:cov": "nyc npm run test",
+    "test:loop": "while npm test --silent; do :; done"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^6.6.0",
+    "eslint-config-hexo": "^3.0.0",
+    "mocha": "^6.2.1",
+    "nyc": "^14.1.1"
+  },
+  "keywords": [
+    "foo",
+    "bar"
+  ],
+  "files": [
+    "lib/",
+    "LICENSE",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=8.6.0"
+  },
+  "author": "dailyrandomphoto <dailyrandomphoto@gmail.com> (https://www.dailyrandomphoto.com/)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dailyrandomphoto/hexo-plugin-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dailyrandomphoto/hexo-plugin-starter/issues"
+  },
+  "homepage": "https://github.com/dailyrandomphoto/hexo-plugin-starter#readme"
+}
