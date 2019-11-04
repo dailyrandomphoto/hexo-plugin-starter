@@ -1,6 +1,6 @@
 'use strict';
 
-const chalk = require('chalk'); // eslint-disable-line node/no-missing-require,node/no-extraneous-require
+const chalk = require('chalk');
 
 const moduleName = require('./package.json').name;
 // TODO: change moduleConfigKey
