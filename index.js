@@ -57,5 +57,5 @@ module.exports = init;
 
 // execute from hexo plugin loader
 if (typeof hexo !== 'undefined') {
-  init(hexo);
+  init(hexo); // eslint-disable-line no-undef
 }

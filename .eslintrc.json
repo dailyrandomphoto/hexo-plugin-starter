@@ -1,21 +1,8 @@
 {
   "extends": "hexo",
   "root": true,
-  "globals": {
-    "hexo": true
-  },
-  "rules": {
-    "one-var": 0,
-    "operator-linebreak": [
-      2,
-      "after"
-    ],
-    "comma-spacing": [
-      2,
-      {
-        "after": true
-      }
-    ]
+  "parserOptions": {
+    "ecmaVersion": 2018
   },
   "overrides": [{
     "files": ["test.js"],
@@ -25,11 +12,6 @@
     },
     "globals": {
       "should": true
-    },
-    "rules": {
-      "node/no-unpublished-require": ["error", {
-        "allowModules": ["cheerio", "hexo"]
-      }]
     }
   }]
 }
